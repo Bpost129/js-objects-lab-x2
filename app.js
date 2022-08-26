@@ -119,8 +119,8 @@ Select a pokemon from the `pokemon` data with a starter property value set to
 /* ----------------------------------------------------------------------------
 Exercise Five
 
-Select three more pokemon of your choice from the `pokemon` data and add them to
-the `game.party` array.
+Select three more pokemon of your choice from the `pokemon` data and add them 
+to the `game.party` array.
 
 ---------------------------------------------------------------------------- */
 // Solve Exercise Five here:
@@ -233,8 +233,10 @@ Add a method called `gymStatus` to the `game` object. This method should:
 - Not accept any arguments
 - Iterate through the objects in the `game.gyms` array and dynamically create 
   an object with two properties: 
-  - One property, `completed`, should count how many gyms in the array have a value of `true` for their `completed` property. 
-  - The second property, `incomplete`, should count how many gyms in the array have a value of `false` for their `completed` property.
+  - One property, `completed`, should count how many gyms in the array have a
+    value of `true` for their `completed` property. 
+  - The second property, `incomplete`, should count how many gyms in the array
+    have a value of `false` for their `completed` property.
 - After creating the object, its final value should be console logged
 - The method should not return anything.
 
