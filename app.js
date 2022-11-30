@@ -44,7 +44,7 @@ pokemon in the console. By default, only the first 100 items in an array are
 shown - we're overriding that behavior here.
 
 When you've completed your inspection of the data, you can comment out the
-console.dir method and move on to Exercise Three. Feel free to uncomment the
+console.dir method and try using the console.log method to log JUST the name of the Pokemon with the number 59. Feel free to uncomment the
 console.dir as needed to help you complete the rest of the lab.
 
 Take note of the shape of the data here. Each pokemon object in the array has:
@@ -180,7 +180,11 @@ Print out the name of each pokemon in your party.
 
 /* ----------------------------------------------------------------------------
 Exercise Ten
+Print out the name of every starter pokemon.
 
+
+/* ----------------------------------------------------------------------------
+Exercise Eleven
 Add a method called `catchPokemon` to the `game` object. This method should:
 - Accept an object on a parameter called `pokemonObj`
 - Add the `pokemonObj` to the `game.party` array.
@@ -190,12 +194,12 @@ After writing this method, make use of it by calling it and passing in a
 pokemon object of your choice from the `pokemon` data to catch it.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Ten here:
+// Solve Exercise Eleven here:
 
-
+game.catchPokemon = function(){}
 
 /* ----------------------------------------------------------------------------
-Exercise Eleven
+Exercise Twelve
 
 Modify the `catchPokemon` method that you just wrote above so that the quantity
 of pokeballs in the `items` array decrements by one each time the method is
@@ -211,23 +215,23 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being
 decremented.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Eleven here:
-
-
-
-/* ----------------------------------------------------------------------------
-Exercise Twelve
-
-Complete the gyms that have a difficulty below 6 (change the value of
-`complete` in the qualifying objects from false to true).
-
----------------------------------------------------------------------------- */
 // Solve Exercise Twelve here:
 
 
 
 /* ----------------------------------------------------------------------------
 Exercise Thirteen
+
+Complete the gyms that have a difficulty below 6 (change the value of
+`complete` in the qualifying objects from false to true).
+
+---------------------------------------------------------------------------- */
+// Solve Exercise Thirteen here:
+
+
+
+/* ----------------------------------------------------------------------------
+Exercise Fourteen
 
 Add a method called `gymStatus` to the `game` object. This method should:
 - Not accept any arguments
@@ -246,12 +250,12 @@ property, the logged value would be: `{ completed: 5, incomplete: 3 }`.
 
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Thirteen here:
+// Solve Exercise Fourteen here:
 
-
+game.gymStatus = function(){}
 
 /* ----------------------------------------------------------------------------
-Exercise Fourteen
+Exercise Fifteen
 
 Add a method called `partyCount` to the `game` object. This method should:
 - Not accept any arguments
@@ -259,28 +263,28 @@ Add a method called `partyCount` to the `game` object. This method should:
 - return the found number of pokemon in the party
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Fourteen here:
+// Solve Exercise Fifteen here:
 
-
+game.partyCount = function(){}
 
 /* ----------------------------------------------------------------------------
-Exercise Fifteen
+Exercise Sixteen
 
 Complete the gyms that have a difficulty below 8 (change the value of
 `complete` in the qualifying objects from false to true).
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Fifteen here:
+// Solve Exercise Sixteen here:
 
 
 
 /* ----------------------------------------------------------------------------
-Exercise Sixteen
+Exercise Seventeen
 
 Print the `game` object.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Sixteen here:
+// Solve Exercise Seventeen here:
 
 
 
@@ -289,7 +293,7 @@ Print the `game` object.
 // to finish the below exercises to get full credit for this lab!
 
 /* ----------------------------------------------------------------------------
-Exercise Seventeen - OPTIONAL LEVEL UP 🚀
+Exercise Eighteen - OPTIONAL LEVEL UP 🚀
 
 Add a new property to the `game` object called `collection` and initialize its
 value to an empty array.
@@ -310,12 +314,12 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being
 decremented.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Seventeen here:
+// Solve Exercise Eighteen here:
 
 
 
 /* ----------------------------------------------------------------------------
-Exercise Eighteen - OPTIONAL LEVEL UP 🚀
+Exercise Nineteen - OPTIONAL LEVEL UP 🚀
 
 Modify the `catchPokemon` method that you wrote in Exercise Seventeen. The time
 has come to make it so that we cannot catch a pokemon when we do not have any
@@ -326,12 +330,12 @@ pokeballs to catch the desired pokemon, and also ensure that the pokemon
 isn't added to the `game.party` or the `game.collection`.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Eighteen here:
+// Solve Exercise Nineteen here:
 
 
 
 /* ----------------------------------------------------------------------------
-Exercise Nineteen - OPTIONAL LEVEL UP 🚀
+Exercise Twenty - OPTIONAL LEVEL UP 🚀
 
 Modify the `catchPokemon` method that you wrote in Exercise Eighteen. Make it
 so that you can just pass in the name of a pokemon instead of an entire object
@@ -347,12 +351,12 @@ pokemon name is passed in, and also ensure that the pokemon isn't added to the
 `game.party` or the `game.collection`.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Nineteen here:
+// Solve Exercise Twenty here:
 
 
 
 /* ----------------------------------------------------------------------------
-Exercise Twenty - OPTIONAL LEVEL UP 🚀
+Exercise Twenty-One - OPTIONAL LEVEL UP 🚀
 
 Dynamically construct an object with the existing `pokemon` data sorted by the 
 different pokemon types. The object will have this structure:
@@ -377,17 +381,17 @@ different pokemon types. The object will have this structure:
 Log the object when it's constructed.
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Twenty here:
+// Solve Exercise Twenty-One here:
 
 
 
 /* ----------------------------------------------------------------------------
-Exercise Twenty-One - OPTIONAL LEVEL UP 🚀
+Exercise Twenty-Two - OPTIONAL LEVEL UP 🚀
 
 Complete all the gyms (change the value of `complete` in the qualifying 
 objects from false to true).
 
 ---------------------------------------------------------------------------- */
-// Solve Exercise Twenty-One here:
+// Solve Exercise Twenty-Two here:
 
 
