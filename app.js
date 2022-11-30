@@ -196,7 +196,9 @@ pokemon object of your choice from the `pokemon` data to catch it.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Eleven here:
 
-game.catchPokemon = function(){}
+game.catchPokemon = function(){
+
+}
 
 /* ----------------------------------------------------------------------------
 Exercise Twelve
@@ -252,7 +254,9 @@ property, the logged value would be: `{ completed: 5, incomplete: 3 }`.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Fourteen here:
 
-game.gymStatus = function(){}
+game.gymStatus = function(){
+
+}
 
 /* ----------------------------------------------------------------------------
 Exercise Fifteen
@@ -265,7 +269,9 @@ Add a method called `partyCount` to the `game` object. This method should:
 ---------------------------------------------------------------------------- */
 // Solve Exercise Fifteen here:
 
-game.partyCount = function(){}
+game.partyCount = function(){
+  
+}
 
 /* ----------------------------------------------------------------------------
 Exercise Sixteen
