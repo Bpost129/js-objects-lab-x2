@@ -1,5 +1,5 @@
 // ! Do not touch, or pay any attention to this line!!
-const pokemon = require("./data.js").pokemon
+import pokemon from "./data.js"
 // ! Remember, the above line doesn't exist!! Please ignore it!
 
 const game = {
@@ -43,10 +43,6 @@ method before, but we're using it here so that you're able to see all of the
 pokemon in the console. By default, only the first 100 items in an array are
 shown - we're overriding that behavior here.
 
-When you've completed your inspection of the data, you can comment out the
-console.dir method and try using the console.log method to log JUST the name of the Pokemon with the number 59. Feel free to uncomment the
-console.dir as needed to help you complete the rest of the lab.
-
 Take note of the shape of the data here. Each pokemon object in the array has:
 - a number, which is a number between 1 and 151
 - a name, which is a string
@@ -69,6 +65,11 @@ here's a quick primer on what these mean:
   - Pokemon 4: Charmander
   - Pokemon 7: Squirtle
   - Pokemon 25: Pikachu
+
+When you've completed your inspection of the data, you can comment out the
+console.dir method and use the console.log method to log JUST the name of the 
+Pokemon with the number 59. Feel free to uncomment the console.dir as needed 
+to help you complete the rest of the lab.
 
 ---------------------------------------------------------------------------- */
 // Solve Exercise Two here:
@@ -180,11 +181,16 @@ Print out the name of each pokemon in your party.
 
 /* ----------------------------------------------------------------------------
 Exercise Ten
+
 Print out the name of every starter pokemon.
+
+---------------------------------------------------------------------------- */
+// Solve Exercise Ten here:
 
 
 /* ----------------------------------------------------------------------------
 Exercise Eleven
+
 Add a method called `catchPokemon` to the `game` object. This method should:
 - Accept an object on a parameter called `pokemonObj`
 - Add the `pokemonObj` to the `game.party` array.
@@ -203,9 +209,9 @@ game.catchPokemon = function(){
 /* ----------------------------------------------------------------------------
 Exercise Twelve
 
-Modify the `catchPokemon` method that you just wrote above so that the quantity
-of pokeballs in the `items` array decrements by one each time the method is
-called, and a pokemon is caught.
+Copy the `catchPokemon` method that you just wrote above, and paste it below.
+Modify it so that the quantity of pokeballs in the `items` array decrements 
+by one each time the method is called, and a pokemon is caught.
 
 For the purposes of this exercise, it's ok to have a negative number of
 pokeballs.
