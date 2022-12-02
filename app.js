@@ -243,7 +243,7 @@ Exercise Fourteen
 
 Add a method called `gymStatus` to the `game` object. This method should:
 - Not accept any arguments
-- Iterate through the objects in the `game.gyms` array and dynamically create 
+- Iterate through the objects in the `game.gyms` array and create 
   an object with two properties: 
   - One property, `completed`, should count how many gyms in the array have a
     value of `true` for their `completed` property. 
