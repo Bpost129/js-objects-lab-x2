@@ -310,7 +310,8 @@ Exercise Eighteen - OPTIONAL LEVEL UP 🚀
 Add a new property to the `game` object called `collection` and initialize its
 value to an empty array.
 
-Modify the `catchPokemon` method that you wrote in Exercise Eleven. Make it:
+Copy the `catchPokemon` method that you wrote in Exercise Twelve, and paste 
+it below. Modify it so that:
 - Ensure that no more than six pokemon can be in the party at any given time. 
   Excess pokemon should be placed in the `game.collection` array.
 - It's up to you how to distribute pokemon in a situation where more than six 
@@ -333,13 +334,14 @@ decremented.
 /* ----------------------------------------------------------------------------
 Exercise Nineteen - OPTIONAL LEVEL UP 🚀
 
-Modify the `catchPokemon` method that you wrote in Exercise Seventeen. The time
-has come to make it so that we cannot catch a pokemon when we do not have any
-pokeballs to catch it with. 
+Copy the `catchPokemon` method that you just wrote above, and paste it below.
+The time has come to make it so that we cannot catch a pokemon when we do not 
+have any pokeballs to catch it with. 
 
-If there are no pokeballs, display a message that there are not enough 
-pokeballs to catch the desired pokemon, and also ensure that the pokemon 
-isn't added to the `game.party` or the `game.collection`.
+Modify the method so that if there are no pokeballs a message will be 
+displayed that there are not enough pokeballs to catch the desired pokemon.
+Also ensure that the pokemon isn't added to the `game.party` or the 
+`game.collection`.
 
 ---------------------------------------------------------------------------- */
 // Solve Exercise Nineteen here:
@@ -349,9 +351,9 @@ isn't added to the `game.party` or the `game.collection`.
 /* ----------------------------------------------------------------------------
 Exercise Twenty - OPTIONAL LEVEL UP 🚀
 
-Modify the `catchPokemon` method that you wrote in Exercise Eighteen. Make it
-so that you can just pass in the name of a pokemon instead of an entire object
-and the method will look up the pokemon from the data set for you.
+Copy the `catchPokemon` method that you just wrote above, and paste it below.
+Modify is so that you can just pass in the name of a pokemon instead of an 
+entire object and the method will look up the pokemon from the data set for you.
 
 The string that is passed in should be allowed to be any case (for example if 
 the string 'PiKacHU' is passed to the function it should match to 'Pikachu' in
