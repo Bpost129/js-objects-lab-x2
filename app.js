@@ -75,7 +75,8 @@ complete the rest of the lab.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Two here:
 
-console.dir(pokemon, { maxArrayLength: null })
+// console.dir(pokemon, { maxArrayLength: null })
+console.log(pokemon[58])
 
 /* ----------------------------------------------------------------------------
 Exercise Three
@@ -116,7 +117,8 @@ Select a pokemon from the `pokemon` data with a starter property value set to
 ---------------------------------------------------------------------------- */
 // Solve Exercise Four here:
 
-
+game.party.push(pokemon[0])
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Five
@@ -127,7 +129,14 @@ to the `game.party` array.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Five here:
 
+// function getRandomInt() {
+//   return Math.floor(Math.random() * (150 - 0 + 1)) + 0;
+// }
 
+game.party.push(pokemon[59])
+game.party.push(pokemon[68])
+game.party.push(pokemon[110])
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Six
@@ -138,7 +147,8 @@ descenting order from the greatest to the least.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Six here:
 
-
+game.party.sort((a, b) => b.hp - a.hp)
+console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Seven
