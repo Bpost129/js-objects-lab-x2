@@ -192,9 +192,9 @@ Print out the name of each pokemon in your party.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Nine here:
 
-game.party.forEach(poke => {
-  console.log(poke.name)
-})
+// game.party.forEach(poke => {
+//   console.log(poke.name)
+// })
 
 /* ----------------------------------------------------------------------------
 Exercise Ten
@@ -204,9 +204,9 @@ Print out the name of every starter pokemon.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Ten here:
 
-pokemon.forEach(poke => {
-  if (poke.starter) console.log(poke.name)
-})
+// pokemon.forEach(poke => {
+//   if (poke.starter) console.log(poke.name)
+// })
 
 /* ----------------------------------------------------------------------------
 Exercise Eleven
@@ -227,7 +227,7 @@ game.catchPokemon = function(pokemonObj){
 }
 
 game.catchPokemon(pokemon[90])
-console.log(game)
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Twelve
@@ -269,7 +269,7 @@ game.gyms.forEach(gym => {
   if (gym.difficulty < 6) gym.completed = true
 })
 
-console.log(game)
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Fourteen
@@ -294,8 +294,15 @@ property, the logged value would be: `{ completed: 5, incomplete: 3 }`.
 // Solve Exercise Fourteen here:
 
 game.gymStatus = function(){
+  let status = { completed: 0, incomplete: 0 }
+  game.gyms.forEach(gym => {
+    gym.completed ? status.completed++ : status.incomplete++
+  })
 
+  console.log(status)
 }
+
+game.gymStatus()
 
 /* ----------------------------------------------------------------------------
 Exercise Fifteen
@@ -309,8 +316,10 @@ Add a method called `partyCount` to the `game` object. This method should:
 // Solve Exercise Fifteen here:
 
 game.partyCount = function(){
-  
+  return game.party.length
 }
+
+// console.log(game.partyCount())
 
 /* ----------------------------------------------------------------------------
 Exercise Sixteen
@@ -321,7 +330,10 @@ Complete the gyms that have a difficulty below 8 (change the value of
 ---------------------------------------------------------------------------- */
 // Solve Exercise Sixteen here:
 
-
+game.gyms.forEach(gym => {
+  gym.difficulty < 8 ? gym.completed = true : gym.completed = false
+})
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Seventeen
@@ -331,7 +343,7 @@ Print the `game` object.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Seventeen here:
 
-
+console.log(game)
 
 // ------------------- 🚀🚀🚀🚀🚀🚀 LEVEL UP 🚀🚀🚀🚀🚀🚀 ------------------- //
 // Everything in the lab past this point is OPTIONAL. You are NOT REQUIRED 
