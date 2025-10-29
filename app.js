@@ -222,9 +222,12 @@ pokemon object of your choice from the `pokemon` data to catch it.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Eleven here:
 
-game.catchPokemon = function(){
-
+game.catchPokemon = function(pokemonObj){
+  game.party.push(pokemonObj)
 }
+
+game.catchPokemon(pokemon[90])
+console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Twelve
@@ -245,7 +248,13 @@ decremented.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Twelve here:
 
+game.catchPokemon = function(pokemonObj){
+  game.party.push(pokemonObj)
+  game.items[1].quantity--
+}
 
+game.catchPokemon(pokemon[65])
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Thirteen
@@ -256,7 +265,11 @@ Complete the gyms that have a difficulty below 6 (change the value of
 ---------------------------------------------------------------------------- */
 // Solve Exercise Thirteen here:
 
+game.gyms.forEach(gym => {
+  if (gym.difficulty < 6) gym.completed = true
+})
 
+console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Fourteen
