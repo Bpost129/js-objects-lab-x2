@@ -343,7 +343,7 @@ Print the `game` object.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Seventeen here:
 
-console.log(game)
+// console.log(game)
 
 // ------------------- 🚀🚀🚀🚀🚀🚀 LEVEL UP 🚀🚀🚀🚀🚀🚀 ------------------- //
 // Everything in the lab past this point is OPTIONAL. You are NOT REQUIRED 
@@ -374,7 +374,21 @@ decremented.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Eighteen here:
 
+game.collection = []
+game.catchPokemon = function(pokemonObj){
+  if (game.party.length < 6) {
+    game.party.push(pokemonObj)
+  } else {
+    game.party.push(pokemonObj)
+    let extra = game.party.shift()
+    game.collection.push(extra)
+  }
+  game.items[1].quantity--
+}
 
+game.catchPokemon(pokemon[82])
+game.catchPokemon(pokemon[95])
+console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Nineteen - OPTIONAL LEVEL UP 🚀
@@ -392,6 +406,20 @@ Also ensure that the pokemon isn't added to the `game.party` or the
 // Solve Exercise Nineteen here:
 
 
+game.catchPokemon = function(pokemonObj){
+  if (game.items[1].quantity >= 1) {
+    if (game.party.length < 6) {
+      game.party.push(pokemonObj)
+    } else {
+      game.party.push(pokemonObj)
+      let extra = game.party.shift()
+      game.collection.push(extra)
+    }
+    game.items[1].quantity--
+  } else {
+    console.log("You don't have any pokeballs!")
+  }
+}
 
 /* ----------------------------------------------------------------------------
 Exercise Twenty - OPTIONAL LEVEL UP 🚀
@@ -412,7 +440,31 @@ pokemon name is passed in, and also ensure that the pokemon isn't added to the
 ---------------------------------------------------------------------------- */
 // Solve Exercise Twenty here:
 
+game.catchPokemon = function(pokemonName){
+  let poke = pokemon.find(mon => mon.name.toLowerCase() === pokemonName.toLowerCase())
 
+
+  if (poke) {
+    if (game.items[1].quantity >= 1) {
+      if (game.party.length < 6) {
+        game.party.push(poke)
+      } else {
+        game.party.push(poke)
+        let extra = game.party.shift()
+        game.collection.push(extra)
+      }
+      game.items[1].quantity--
+    } else {
+      console.log("You don't have any pokeballs!")
+    }
+  } else {
+    console.log("That pokemon does not exist!")
+  }
+}
+
+game.catchPokemon('Krabby')
+game.catchPokemon('Voltorb')
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Twenty-One - OPTIONAL LEVEL UP 🚀
@@ -442,7 +494,16 @@ Log the object when it's constructed.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Twenty-One here:
 
+let types = {}
+pokemon.forEach(poke => {
+  if (types[poke.type]) {
+    types[poke.type].push(poke)
+  } else {
+    types[poke.type] = [poke]
+  }
+})
 
+// console.log(types)
 
 /* ----------------------------------------------------------------------------
 Exercise Twenty-Two - OPTIONAL LEVEL UP 🚀
@@ -453,4 +514,13 @@ objects from false to true).
 ---------------------------------------------------------------------------- */
 // Solve Exercise Twenty-Two here:
 
+game.gyms.forEach(gym => {
+  gym.completed = true
+})
 
+game.catchPokemon('Dewgong')
+game.catchPokemon('Grimer')
+game.catchPokemon('Diglett')
+game.catchPokemon('Psyduck')
+
+console.log(game)
