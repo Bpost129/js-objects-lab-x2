@@ -148,7 +148,7 @@ descenting order from the greatest to the least.
 // Solve Exercise Six here:
 
 game.party.sort((a, b) => b.hp - a.hp)
-console.log(game)
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Seven
@@ -159,7 +159,10 @@ Complete the gyms that have a difficulty below 3 (change the value of
 ---------------------------------------------------------------------------- */
 // Solve Exercise Seven here:
 
-
+game.gyms.forEach(gym => {
+  if (gym.difficulty < 3) gym.completed = true
+})
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Eight
@@ -178,7 +181,8 @@ More Hints: The existing starter pokemon will be *replaced* in your party with
 ---------------------------------------------------------------------------- */
 // Solve Exercise Eight here:
 
-
+game.party.splice(2, 1, pokemon[1])
+// console.log(game)
 
 /* ----------------------------------------------------------------------------
 Exercise Nine
@@ -188,7 +192,9 @@ Print out the name of each pokemon in your party.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Nine here:
 
-
+game.party.forEach(poke => {
+  console.log(poke.name)
+})
 
 /* ----------------------------------------------------------------------------
 Exercise Ten
@@ -198,6 +204,9 @@ Print out the name of every starter pokemon.
 ---------------------------------------------------------------------------- */
 // Solve Exercise Ten here:
 
+pokemon.forEach(poke => {
+  if (poke.starter) console.log(poke.name)
+})
 
 /* ----------------------------------------------------------------------------
 Exercise Eleven
